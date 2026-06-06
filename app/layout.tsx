@@ -31,7 +31,11 @@ export default function RootLayout({
       <head>
         {/* Preconnect para carga rápida de Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body>
+        {children}
+      </body>
+    </html>
+  );
+}
