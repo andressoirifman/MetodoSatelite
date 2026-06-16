@@ -13,7 +13,7 @@ const modulos = [
     subtitulo: "Fundamentos",
     descripcion:
       "Limpieza de maleza mental y neurociencia de la visión. Identificás los patrones de falla en tu sistema actual y establecés la base para una nueva arquitectura cognitiva.",
-    imagen: "/assets/M1_Fundamentos.jpg",
+    imagen: "/M1_Fundamentos.jpg",
     alt: "Fundamentos: Contraste entre sistema lineal y pensamiento irradiante",
     tags: ["Neurociencia", "Diagnóstico", "Baseline"],
     accentColor: "var(--accent-cyan)",
@@ -24,7 +24,7 @@ const modulos = [
     subtitulo: "Arquitectura Visual",
     descripcion:
       "Técnica de precisión: los 7 pasos de la arquitectura visual y los Nodos Maestros. El plano estructural de tu sistema de conocimiento.",
-    imagen: "/assets/M2_Plano_de_construccions.jpg",
+    imagen: "/M2_Plano_de_construccions.jpg",
     alt: "Plano de Construcción: Grilla de ingeniería y los 7 pasos visuales",
     tags: ["7 Pasos", "Nodos Maestros", "Arquitectura"],
     accentColor: "var(--accent-cta)",
@@ -35,7 +35,7 @@ const modulos = [
     subtitulo: "Operaciones de Alto Rinde",
     descripcion:
       "Lectura de alto rinde, gestión de proyectos con WBS y simulador de escenarios. Convertís información en activos operativos productivos.",
-    imagen: "/assets/M3_Cultivo_de_conocimiento.jpg",
+    imagen: "/M3_Cultivo_de_conocimiento.jpg",
     alt: "Cultivo: Aplicaciones operativas de alto rinde y simulación de escenarios",
     tags: ["WBS", "Alto Rinde", "Simulación"],
     accentColor: "var(--accent-green)",
@@ -46,7 +46,7 @@ const modulos = [
     subtitulo: "Escalamiento y Red",
     descripcion:
       "Optimización, escalamiento, archivo de inteligencia y polinización cruzada de ideas. Tu ecosistema satélite operando en plenitud.",
-    imagen: "/assets/M4_la_cosecha.jpg",
+    imagen: "/M4_la_cosecha.jpg",
     alt: "Cosecha: Ecosistema satélite, escalamiento y proyección de red",
     tags: ["Escalamiento", "Archivo", "Red"],
     accentColor: "var(--accent-orange)",

@@ -8,7 +8,7 @@ const CHECKOUT_URL =
 
 const NAV_LINKS = [
   { name: "El Sistema",     href: "#hero"         },
-  { name: "El Quiebre",     href: "#dolor"        },
+  { name: "El Quiebre",     href: "#problema"     },
   { name: "Los 4 Módulos",  href: "#modulos"      },
   { name: "Entregables",    href: "#entregables"  },
   { name: "Casos de Éxito", href: "#testimonios"  },
@@ -100,7 +100,7 @@ export default function Header() {
               color:        "#f8fafc",
             }}
           >
-            Mega Pack<span style={{ color: "#00E5FF" }}>.</span>
+            Método<span style={{ color: "#00E5FF" }}>Satélite</span>
           </span>
         </div>
 

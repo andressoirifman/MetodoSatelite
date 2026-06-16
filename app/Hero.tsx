@@ -31,7 +31,7 @@ export default function Hero() {
       {/* Regla Manual de Operaciones §5: Portada_MM.jpg únicamente en cabecera */}
       <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
         <Image
-          src="/assets/Portada_MM.jpg"
+          src="/Portada_MM.jpg"
           alt="Árbol de ideas irradiante y colorido que representa la explosión cognitiva antes del orden estructural"
           fill
           priority
@@ -102,8 +102,7 @@ export default function Hero() {
             Ingeniería del Aprendizaje · Método Satélite
           </div>
 
-          {/* H1: LEMA OFICIAL DE MARCA */}
-          {/* Manual §1 Pomelli: "El sistema completo para aprobar, programar y conseguir tu primer trabajo en TI" */}
+          {/* H1: HEADLINE OFICIAL MÉTODO SATÉLITE */}
           <h1
             style={{
               fontFamily:    "'Space Grotesk', sans-serif",
@@ -115,23 +114,30 @@ export default function Hero() {
               marginBottom:   "1.5rem",
             }}
           >
-            El sistema completo para{" "}
+            De la{" "}
             <span
               style={{
-                color:      "#00E5FF",
-                textShadow: "0 0 30px rgba(0, 229, 255, 0.25)",
+                color:          "#94a3b8",
+                textDecoration: "line-through",
+                textDecorationColor: "rgba(239,68,68,0.5)",
               }}
             >
-              aprobar
+              Infoxicación
             </span>
-            ,{" "}
-            <span style={{ color: "#22C55E" }}>
-              programar
-            </span>{" "}
-            y conseguir tu primer trabajo en TI.
+            {" "}a la{" "}
+            <span
+              style={{
+                background: "linear-gradient(135deg, #00E5FF 0%, #22C55E 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Arquitectura Mental
+            </span>
           </h1>
 
-          {/* SUBTÍTULO — tono técnico, vos rioplatense */}
+          {/* SUBTÍTULO */}
           <p
             style={{
               fontFamily:   "'Inter', sans-serif",
@@ -142,12 +148,13 @@ export default function Hero() {
               maxWidth:     "42rem",
             }}
           >
-            Dejá atrás el estudio lineal ineficiente. Diseñá tu propia{" "}
+            Procesá en{" "}
             <strong style={{ color: "#f8fafc", fontWeight: 600 }}>
-              Arquitectura del Conocimiento
-            </strong>
-            . Mapeá información compleja con técnicas de alto rinde y elevá tu
-            retención al{" "}
+              1 hora
+            </strong>{" "}
+            lo que antes tomaba 5. Ingeniería del aprendizaje basada en
+            neurociencia y analogías agronómicas. 4 módulos. 16 lecciones.
+            Retención del{" "}
             <span
               style={{
                 color:      "#f97316",
@@ -157,7 +164,7 @@ export default function Hero() {
             >
               90%
             </span>{" "}
-            de forma real y medible.
+            real y medible.
           </p>
 
           {/* ETIQUETA TÉCNICA */}
@@ -170,7 +177,7 @@ export default function Hero() {
               marginBottom: "2.5rem",
             }}
           >
-            {"// Sistema técnico · Neurociencia aplicada · Para ingenieros y profesionales de TI"}
+            {"// Neurociencia aplicada · Analogías agronómicas · Ingeniería del aprendizaje"}
           </p>
 
           {/* CTAs */}
