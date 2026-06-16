@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────
+   DESIGN TOKENS — Método Satélite
+   Paleta: Dark Tech Orgánico
+   ───────────────────────────────────────────── */
+:root {
+  /* Fondos */
+  --bg-deep:        #0B0E21;   /* Negro Obsidiana — fondo principal */
+  --bg-surface:     #0f172a;   /* Slate 900 — secciones alternadas */
+  --bg-card:        #1e293b;   /* Slate 800 — cards */
+  --bg-card-hover:  #263548;   /* Card hover state */
+  --bg-border:      #334155;   /* Slate 700 — bordes */
+
+  /* Tipografía */
+  --text-primary:   #f8fafc;   /* Blanco tiza */
+  --text-secondary: #94a3b8;   /* Gris técnico */
+  --text-muted:     #64748b;   /* Texto atenuado */
+
+  /* Acentos */
+  --accent-cta:     #10b981;   /* Esmeralda — CTA principal */
+  --accent-hover:   #059669;   /* Esmeralda hover */
+  --accent-cyan:    #00E5FF;   /* Cian eléctrico — señal satélite */
+  --accent-green:   #22C55E;   /* Verde Pomelli */
+  --accent-orange:  #f97316;   /* Naranja nodo */
+
+  /* Tipografías */
+  --font-headline:  'Space Grotesk', system-ui, sans-serif;
+  --font-body:      'Inter', system-ui, sans-serif;
+  --font-mono:      'Fira Code', 'JetBrains Mono', monospace;
+
+  /* Gradientes */
+  --gradient-cta:   linear-gradient(135deg, #059669 0%, #00E5FF 100%);
+  --gradient-hero:  linear-gradient(135deg, #0B0E21 0%, #0f172a 50%, #162032 100%);
+}
+
+/* ─────────────────────────────────────────────
+   BASE RESET
+   ───────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--text-primary);
+  }
+
+  h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+  h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+  h3 { font-size: clamp(1.15rem, 2vw, 1.5rem); }
+
+  p {
+    color: var(--text-secondary);
+    line-height: 1.75;
+  }
+
+  a { text-decoration: none; }
+
+  /* Scrollbar personalizado */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg-deep); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-border);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+  /* Focus accesible */
+  :focus-visible {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ─────────────────────────────────────────────
+   COMPONENTES UTILITARIOS
+   ───────────────────────────────────────────── */
+@layer components {
+
+  /* Container principal */
+  .container-main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-main {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-main {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
+  /* Badge técnica */
+  .badge-tech {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-cyan);
+    background: rgba(0, 229, 255, 0.06);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+  }
+
+  /* Tag mono */
+  .tag-mono {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* Línea de acento (antes de headings) */
+  .accent-line {
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-cta), var(--accent-cyan));
+    border-radius: 2px;
+    margin-bottom: 1rem;
+  }
+
+  /* Divisor de sección */
+  .section-divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(51, 65, 85, 0.6) 30%,
+      rgba(0, 229, 255, 0.15) 50%,
+      rgba(51, 65, 85, 0.6) 70%,
+      transparent 100%
+    );
+  }
+
+  /* Número de módulo */
+  .module-number {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  /* ── BOTONES ── */
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #0B0E21;
+    background: var(--accent-cta);
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.25);
+    white-space: nowrap;
+  }
+
+  .btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.45);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-headline);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--accent-cyan);
+    background: transparent;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    border: 1.5px solid rgba(0, 229, 255, 0.35);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(0, 229, 255, 0.08);
+    border-color: rgba(0, 229, 255, 0.65);
+    transform: translateY(-2px);
+  }
+
+  .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #0B0E21;
+    background: #25d366;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 25px rgba(37, 211, 102, 0.25);
+    white-space: nowrap;
+  }
+
+  .btn-whatsapp:hover {
+    background: #1db954;
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(37, 211, 102, 0.45);
+  }
+}
