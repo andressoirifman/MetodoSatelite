@@ -23,20 +23,6 @@ const entregables = [
       "Documentación de los 7 pasos, las reglas de indexación cromática y los protocolos de activación de nodos maestros.",
     color: "var(--accent-green)",
   },
-  {
-    icon: Wrench,
-    titulo: "Simulador de escenarios",
-    descripcion:
-      "Ejercicios prácticos de alto rinde para aplicar el método a situaciones reales: parciales de ingeniería, gestión de proyectos, y preparación de exámenes.",
-    color: "var(--accent-orange)",
-  },
-  {
-    icon: Users,
-    titulo: "Comunidad en Cursapp",
-    descripcion:
-      "Acceso al espacio de alumnos del Método Satélite. Dudas, recursos compartidos y actualización continua del sistema.",
-    color: "var(--accent-cta)",
-  },
 ];
 
 const checks = [
