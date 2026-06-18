@@ -6,8 +6,7 @@ const CHECKOUT_URL =
   "https://cursapp.com/cursos/metodo-satelite";
 
 const WHATSAPP_URL =
-  process.env.NEXT_PUBLIC_WHATSAPP_MENTORIA ||
-  "https://wa.me/?text=info";
+  "https://wa.me/5493434159557?text=Hola%2C+quiero+info+sobre+la+mentor%C3%ADa+del+M%C3%A9todo+Sat%C3%A9lite";
 
 const cursoBenefits = [
   "16 lecciones en video (acceso de por vida)",

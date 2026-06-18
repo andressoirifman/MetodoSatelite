@@ -108,6 +108,9 @@
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    /* Optimización INP: evitar layout thrashing */
+    contain: layout style paint;
+    will-change: auto;
   }
 
   @media (min-width: 640px) {
@@ -272,4 +275,13 @@ iframe[src*="vercel"],
 [class*="toolbar"],
 [data-testid*="vercel"] {
   display: none !important;
+}
+
+/* ─────────────────────────────────────────────
+   DESHABILITAR MENÚ HAMBURGUESA MOBILE
+   ───────────────────────────────────────────── */
+button[aria-label="Abrir menú de navegación"] {
+  display: none !important;
+  pointer-events: none;
+  visibility: hidden;
 }
