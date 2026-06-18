@@ -6,7 +6,8 @@ const CHECKOUT_URL =
   "https://cursapp.com/cursos/metodo-satelite";
 
 const WHATSAPP_URL =
-  "https://wa.me/5493434159557?text=Hola%2C+quiero+info+sobre+la+mentor%C3%ADa+del+M%C3%A9todo+Sat%C3%A9lite";
+  process.env.NEXT_PUBLIC_WHATSAPP_MENTORIA ||
+  "https://wa.me/?text=info";
 
 const cursoBenefits = [
   "16 lecciones en video (acceso de por vida)",
@@ -152,13 +153,13 @@ export default function CTAFinal() {
                   lineHeight: 1,
                 }}
               >
-                $21.20
+                $25 USD
               </span>
               <span
                 className="text-sm mb-1"
                 style={{ color: "var(--text-muted)" }}
               >
-                USD · pago único
+                o $30.000 ARS · pago único
               </span>
             </div>
 
@@ -264,13 +265,13 @@ export default function CTAFinal() {
                   lineHeight: 1,
                 }}
               >
-                $96.20
+                $100 USD
               </span>
               <span
                 className="text-sm mb-1"
                 style={{ color: "var(--text-muted)" }}
               >
-                USD · total
+                o $100.000 ARS · total
               </span>
             </div>
 
@@ -285,7 +286,7 @@ export default function CTAFinal() {
                 lineHeight: 1.7,
               }}
             >
-              // Curso $21.20 + Mentoría $75 USD
+              // Curso $25 USD + Mentoría $100 USD
               <br />
               // Horarios: Lun-Vie 18:00-21:00 ART
             </div>

@@ -9,12 +9,12 @@ import { Quote } from "lucide-react";
 const testimonios = [
   {
     id: "t1",
-    nombre: "Valentina R.",
-    perfil: "Estudiante de Ingeniería Agronómica · 4to año",
-    ubicacion: "Paraná, Entre Ríos",
+    nombre: "Martín H.",
+    perfil: "Ingeniero en Sistemas · Data Analysis",
+    ubicacion: "CDMX, México",
     cita:
-      "Antes del Método Satélite, rendir Fisiología Vegetal era sembrar en cemento: estudiaba 12 horas y en el examen la mente en blanco. Con los nodos maestros estructuré toda la unidad de fotosíntesis en una sesión. Aprobé con 9.",
-    resultado: "Retención +80% en materia técnica",
+      "Procesaba documentación técnica de forma lineal. Perdía 6 horas por informe. Implementé los nodos maestros en mis PDFs de proyecto. Ahora extraigo la información crítica en 45 minutos. Productividad x3.",
+    resultado: "Eficiencia +300% en análisis de datos",
     accentColor: "var(--accent-cta)",
   },
   {

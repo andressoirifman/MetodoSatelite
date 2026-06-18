@@ -48,10 +48,10 @@ export default function Footer() {
           {/* Links */}
           <nav className="flex flex-wrap items-center gap-6">
             {[
-              { label: "El Problema", href: "#problema" },
-              { label: "Los Módulos", href: "#modulos" },
-              { label: "Qué incluye", href: "#entregables" },
-              { label: "Testimonios", href: "#testimonios" },
+              { label: "Solución", href: "#problema" },
+              { label: "Programa", href: "#modulos" },
+              { label: "Sistema", href: "#entregables" },
+              { label: "Casos", href: "#testimonios" },
             ].map((link) => (
               <a
                 key={link.href}

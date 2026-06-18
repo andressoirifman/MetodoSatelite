@@ -260,3 +260,16 @@
     box-shadow: 0 0 40px rgba(37, 211, 102, 0.45);
   }
 }
+
+/* ─────────────────────────────────────────────
+   DESHABILITAR VERCEL TOOLBAR & FEEDBACK CHAT
+   ───────────────────────────────────────────── */
+iframe[src*="vercel"],
+[data-vercel-toolbar],
+[class*="vercel-toolbar"],
+[id*="vercel"],
+[class*="feedback"],
+[class*="toolbar"],
+[data-testid*="vercel"] {
+  display: none !important;
+}

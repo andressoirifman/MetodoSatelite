@@ -7,11 +7,11 @@ const CHECKOUT_URL =
   "https://cursapp.com/cursos/metodo-satelite";
 
 const NAV_LINKS = [
-  { name: "El Sistema",     href: "#hero"         },
-  { name: "El Quiebre",     href: "#problema"     },
-  { name: "Los 4 Módulos",  href: "#modulos"      },
-  { name: "Entregables",    href: "#entregables"  },
-  { name: "Casos de Éxito", href: "#testimonios"  },
+  { name: "Solución",     href: "#problema"     },
+  { name: "Programa",     href: "#modulos"      },
+  { name: "Sistema",      href: "#entregables"  },
+  { name: "Casos",        href: "#testimonios"  },
+  { name: "Contacto",     href: "#faq"          },
 ];
 
 export default function Header() {
@@ -175,12 +175,13 @@ export default function Header() {
           <ArrowRight size={14} />
         </a>
 
-        {/* ── BOTÓN HAMBURGUESA MOBILE ── */}
+        {/* ── BOTÓN HAMBURGUESA MOBILE — OCULTO ── */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden"
           aria-label="Abrir menú de navegación"
           style={{
+            display:     "none", /* ← OCULTO */
             background:  "transparent",
             border:      "none",
             cursor:      "pointer",
