@@ -273,15 +273,19 @@ iframe[src*="vercel"],
 [id*="vercel"],
 [class*="feedback"],
 [class*="toolbar"],
-[data-testid*="vercel"] {
+[class*="__vercel"],
+[data-testid*="vercel"],
+button[aria-label*="feedback"],
+[role="dialog"][aria-label*="vercel"],
+div[class*="vcls-"] {
   display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
 }
 
-/* ─────────────────────────────────────────────
-   DESHABILITAR MENÚ HAMBURGUESA MOBILE
-   ───────────────────────────────────────────── */
-button[aria-label="Abrir menú de navegación"] {
-  display: none !important;
-  pointer-events: none;
-  visibility: hidden;
+/* Bloqueo adicional para iframes */
+iframe {
+  opacity: 0 !important;
 }

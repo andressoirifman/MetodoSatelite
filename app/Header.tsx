@@ -11,7 +11,6 @@ const NAV_LINKS = [
   { name: "Programa",     href: "#modulos"      },
   { name: "Sistema",      href: "#entregables"  },
   { name: "Casos",        href: "#testimonios"  },
-  { name: "Contacto",     href: "#faq"          },
 ];
 
 export default function Header() {
