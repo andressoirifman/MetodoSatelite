@@ -39,7 +39,7 @@ export default function Hero() {
           style={{
             objectFit:    "cover",
             objectPosition: "center",
-            opacity:      0.75,
+            opacity:      0.85,
             filter:       "grayscale(100%) contrast(1.2)",
           }}
         />
