@@ -39,8 +39,8 @@ export default function Hero() {
           style={{
             objectFit:    "cover",
             objectPosition: "center",
-            opacity:      0.85,
-            filter:       "grayscale(100%) contrast(1.2)",
+            opacity:      0.95,
+            filter:       "grayscale(75%) contrast(1.2)",
           }}
         />
         {/* Overlay: asegura legibilidad total sobre la imagen */}
