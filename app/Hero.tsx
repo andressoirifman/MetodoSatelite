@@ -110,16 +110,18 @@ export default function Hero() {
               fontSize:       "clamp(2.25rem, 5.5vw, 4rem)",
               lineHeight:     1.1,
               letterSpacing: "-0.02em",
-              color:          "#f8fafc",
+              color:          "#ffffff",
               marginBottom:   "1.5rem",
+              textShadow:    "0 2px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.95)",
             }}
           >
             De la{" "}
             <span
               style={{
-                color:          "#94a3b8",
+                color:          "#ffffff",
                 textDecoration: "line-through",
-                textDecorationColor: "rgba(239,68,68,0.5)",
+                textDecorationColor: "rgba(239,68,68,0.8)",
+                textShadow:    "0 2px 12px rgba(0,0,0,0.9)",
               }}
             >
               Infoxicación
@@ -131,6 +133,7 @@ export default function Hero() {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
+                filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.9))",
               }}
             >
               Arquitectura Mental
@@ -143,9 +146,10 @@ export default function Hero() {
               fontFamily:   "'Inter', sans-serif",
               fontSize:     "clamp(1rem, 2vw, 1.2rem)",
               lineHeight:   1.75,
-              color:        "#94a3b8",
+              color:        "#ffffff",
               marginBottom: "0.75rem",
               maxWidth:     "42rem",
+              textShadow:   "0 1px 8px rgba(0,0,0,0.95), 0 2px 16px rgba(0,0,0,0.8)",
             }}
           >
             Procesá en{" "}
