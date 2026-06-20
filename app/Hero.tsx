@@ -39,8 +39,8 @@ export default function Hero() {
           style={{
             objectFit:    "cover",
             objectPosition: "center",
-            opacity:      0.30,
-            filter:       "contrast(1.4) brightness(1.1) saturate(1.1)",
+            opacity:      0.85,
+            filter:       "none",
           }}
         />
         {/* Overlay: asegura legibilidad total sobre la imagen */}
@@ -48,7 +48,7 @@ export default function Hero() {
           style={{
             position:   "absolute",
             inset:      0,
-            background: "linear-gradient(to bottom, rgba(11,14,33,0.75) 0%, rgba(11,14,33,0.92) 60%, #0B0E21 100%)",
+            background: "linear-gradient(to bottom, rgba(11,14,33,0.35) 0%, rgba(11,14,33,0.55) 60%, rgba(11,14,33,0.75) 100%)",
           }}
         />
       </div>
