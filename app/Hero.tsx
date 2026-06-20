@@ -40,7 +40,7 @@ export default function Hero() {
             objectFit:    "cover",
             objectPosition: "center",
             opacity:     1,
-            filter:       "grayscale(75%) contrast(1.2)",
+            filter:       "grayscale(0%) contrast(1.0)",
           }}
         />
         {/* Overlay: asegura legibilidad total sobre la imagen */}
