@@ -112,7 +112,7 @@ export default function Hero() {
               letterSpacing: "-0.02em",
               color:          "#ffffff",
               marginBottom:   "1.5rem",
-              textShadow:    "0 2px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.95)",
+              textShadow:    "2px 2px 0px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.9)",
             }}
           >
             De la{" "}
@@ -120,8 +120,8 @@ export default function Hero() {
               style={{
                 color:          "#ffffff",
                 textDecoration: "line-through",
-                textDecorationColor: "rgba(239,68,68,0.8)",
-                textShadow:    "0 2px 12px rgba(0,0,0,0.9)",
+                textDecorationColor: "rgba(239,68,68,0.9)",
+                textShadow:    "2px 2px 0px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,1)",
               }}
             >
               Infoxicación
@@ -129,11 +129,8 @@ export default function Hero() {
             {" "}a la{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #00E5FF 0%, #22C55E 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.9))",
+                color: "#00E5FF",
+                textShadow: "1px 1px 0px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,1)",
               }}
             >
               Arquitectura Mental
@@ -149,7 +146,7 @@ export default function Hero() {
               color:        "#ffffff",
               marginBottom: "0.75rem",
               maxWidth:     "42rem",
-              textShadow:   "0 1px 8px rgba(0,0,0,0.95), 0 2px 16px rgba(0,0,0,0.8)",
+              textShadow:   "1px 1px 0px rgba(0,0,0,1), 0 0 15px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,0.9)",
             }}
           >
             Procesá en{" "}
@@ -177,8 +174,9 @@ export default function Hero() {
               fontFamily:   "'Fira Code', monospace",
               fontSize:     "0.78rem",
               letterSpacing:"0.05em",
-              color:        "#64748b",
+              color:        "#00E5FF",
               marginBottom: "2.5rem",
+              textShadow:   "1px 1px 0px rgba(0,0,0,1), 0 0 12px rgba(0,0,0,1)",
             }}
           >
             {"// Neurociencia aplicada · Analogías agronómicas · Ingeniería del aprendizaje"}

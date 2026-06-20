@@ -118,17 +118,18 @@ export default function Header() {
               href={item.href}
               style={{
                 fontFamily:  "'Inter', sans-serif",
-                fontWeight:   500,
+                fontWeight:   600,
                 fontSize:    "0.875rem",
-                color:        "#94a3b8",
+                color:        "#ffffff",
                 textDecoration: "none",
                 transition:  "color 0.2s ease",
+                textShadow: "1px 1px 0px rgba(0,0,0,1), 0 0 10px rgba(0,0,0,1)",
               }}
               onMouseEnter={(e) =>
                 ((e.target as HTMLAnchorElement).style.color = "#00E5FF")
               }
               onMouseLeave={(e) =>
-                ((e.target as HTMLAnchorElement).style.color = "#94a3b8")
+                ((e.target as HTMLAnchorElement).style.color = "#ffffff")
               }
             >
               {item.name}
