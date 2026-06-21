@@ -28,7 +28,6 @@ const entregables = [
 const checks = [
   "Acceso de por vida al contenido en Cursapp",
   "Actualizaciones del método sin costo adicional",
-  "Certificado de finalización del programa",
   "Soporte técnico sobre la plataforma",
 ];
 
