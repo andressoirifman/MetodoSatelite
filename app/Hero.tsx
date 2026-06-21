@@ -253,18 +253,17 @@ export default function Hero() {
 
       {/* ── MÉTRICAS FLOTANTES (solo desktop) ── */}
       <div
+        className="hidden lg:flex"
         style={{
           position:      "absolute",
           right:         "3rem",
           top:           "50%",
           transform:     "translateY(-50%)",
           zIndex:        2,
-          display:       "flex",
           flexDirection: "column",
           gap:           "1.75rem",
           opacity:       0.9,
         }}
-        className="hidden lg:flex"
       >
         {STATS.map((stat) => (
           <div
