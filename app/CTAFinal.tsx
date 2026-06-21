@@ -101,7 +101,7 @@ export default function CTAFinal() {
 
           {/* OPCIÓN 1: Curso */}
           <div
-            className="relative flex flex-col rounded-2xl p-8 transition-all duration-300"
+            className="relative flex flex-col rounded-2xl p-5 sm:p-8 transition-all duration-300"
             style={{
               background: "var(--bg-card)",
               border: "1px solid var(--bg-border)",
@@ -197,7 +197,7 @@ export default function CTAFinal() {
 
           {/* OPCIÓN 2: Combo Curso + Mentoría */}
           <div
-            className="relative flex flex-col rounded-2xl p-8 transition-all duration-300"
+            className="relative flex flex-col rounded-2xl p-5 sm:p-8 transition-all duration-300"
             style={{
               background: "rgba(16, 185, 129, 0.04)",
               border: "1px solid rgba(16, 185, 129, 0.35)",

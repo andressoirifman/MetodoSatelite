@@ -44,23 +44,9 @@ export default function Header() {
         Se respeta la regla del Manual de Marca Pomelli:
         espacio de respiro de 50px alrededor del logotipo
       */}
-      <div
-        style={{
-          maxWidth:      "1400px",
-          margin:        "0 auto",
-          padding:       "0 3rem",
-          display:       "flex",
-          alignItems:    "center",
-          justifyContent:"space-between",
-        }}
-      >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
 
-        {/* ── LOGOTIPO ──
-            Reglas del 06_Manual_Marca_Pomelli aplicadas:
-            - Espacio de respiro: 50px a cada lado (margen + padding del contenedor)
-            - Tamaño mínimo: 108px de ancho
-            - Color: Negro Obsidiana + Azul Cian como acento
-        */}
+        {/* ── LOGOTIPO ── */}
         <div
           aria-label="Logo Mega Pack Informática"
           style={{
