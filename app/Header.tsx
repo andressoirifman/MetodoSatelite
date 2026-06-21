@@ -89,15 +89,8 @@ export default function Header() {
           </span>
         </div>
 
-        {/* ── NAVEGACIÓN DESKTOP ── */}
-        <nav
-          style={{
-            display:    "flex",
-            alignItems: "center",
-            gap:        "2rem",
-          }}
-          className="hidden md:flex"
-        >
+        {/* ── NAVEGACIÓN DESKTOP — solo visible md+ ── */}
+        <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((item) => (
             <a
               key={item.name}
