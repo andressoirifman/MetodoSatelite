@@ -30,7 +30,7 @@ const testimonios = [
   {
     id: "t3",
     nombre: "Sofía B.",
-    perfil: "Profesional en RRHH · Maestranda",
+    perfil: "Profesional en RRHH",
     ubicacion: "Buenos Aires, Argentina",
     cita:
       "Pensé que era un curso de mapas mentales con colores. Es completamente distinto. Es ingeniería del conocimiento. Procesé los 300 papers de mi marco teórico usando el sistema de archivo del módulo 4 y la tesis avanzó de otra manera.",

@@ -333,7 +333,7 @@ export default function CTAFinal() {
             letterSpacing: "0.05em",
           }}
         >
-          // Pago seguro via Cursapp · 7 días de garantía · Acceso inmediato al comprar
+          // Pago seguro via Cursapp · Acceso inmediato al comprar
         </p>
       </div>
     </section>

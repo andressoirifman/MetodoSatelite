@@ -140,7 +140,7 @@ export default function Dolor() {
                 ❌ Sistema Lineal
               </div>
               <div
-                className="mb-3"
+                className="mb-3 hidden sm:block"
                 style={{
                   fontFamily: "var(--font-mono)",
                   fontSize: "0.75rem",
@@ -195,7 +195,7 @@ export default function Dolor() {
                 ✓ Pensamiento Irradiante
               </div>
               <div
-                className="mb-3"
+                className="mb-3 hidden sm:block"
                 style={{
                   fontFamily: "var(--font-mono)",
                   fontSize: "0.75rem",
