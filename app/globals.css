@@ -269,3 +269,20 @@
     box-shadow: 0 0 40px rgba(37, 211, 102, 0.45);
   }
 }
+
+/* ─────────────────────────────────────────────
+   DESHABILITAR SELECCIÓN DE TEXTO EN DESKTOP
+   Mantiene selección normal en móvil
+   ───────────────────────────────────────────── */
+@media (min-width: 1024px) {
+  body * {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  input,
+  textarea {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+}
