@@ -8,23 +8,23 @@
    ───────────────────────────────────────────── */
 :root {
   /* Fondos */
-  --bg-deep:        #0B0E21;   /* Negro Obsidiana — fondo principal */
-  --bg-surface:     #0f172a;   /* Slate 900 — secciones alternadas */
-  --bg-card:        #1e293b;   /* Slate 800 — cards */
-  --bg-card-hover:  #263548;   /* Card hover state */
-  --bg-border:      #334155;   /* Slate 700 — bordes */
+  --bg-deep:        #0B0E21;
+  --bg-surface:     #0f172a;
+  --bg-card:        #1e293b;
+  --bg-card-hover:  #263548;
+  --bg-border:      #334155;
 
   /* Tipografía */
-  --text-primary:   #f8fafc;   /* Blanco tiza */
-  --text-secondary: #94a3b8;   /* Gris técnico */
-  --text-muted:     #64748b;   /* Texto atenuado */
+  --text-primary:   #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
 
   /* Acentos */
-  --accent-cta:     #10b981;   /* Esmeralda — CTA principal */
-  --accent-hover:   #059669;   /* Esmeralda hover */
-  --accent-cyan:    #00E5FF;   /* Cian eléctrico — señal satélite */
-  --accent-green:   #22C55E;   /* Verde Pomelli */
-  --accent-orange:  #f97316;   /* Naranja nodo */
+  --accent-cta:     #10b981;
+  --accent-hover:   #059669;
+  --accent-cyan:    #00E5FF;
+  --accent-green:   #22C55E;
+  --accent-orange:  #f97316;
 
   /* Tipografías */
   --font-headline:  'Space Grotesk', system-ui, sans-serif;
@@ -108,9 +108,6 @@
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    /* Optimización INP: evitar layout thrashing */
-    contain: layout style paint;
-    will-change: auto;
   }
 
   @media (min-width: 640px) {
@@ -151,7 +148,7 @@
     text-transform: uppercase;
   }
 
-  /* Línea de acento (antes de headings) */
+  /* Línea de acento */
   .accent-line {
     display: block;
     width: 2.5rem;
@@ -271,30 +268,4 @@
     transform: translateY(-2px);
     box-shadow: 0 0 40px rgba(37, 211, 102, 0.45);
   }
-}
-
-/* ─────────────────────────────────────────────
-   DESHABILITAR VERCEL TOOLBAR & FEEDBACK CHAT
-   ───────────────────────────────────────────── */
-iframe[src*="vercel"],
-[data-vercel-toolbar],
-[class*="vercel-toolbar"],
-[id*="vercel"],
-[class*="feedback"],
-[class*="toolbar"],
-[class*="__vercel"],
-[data-testid*="vercel"],
-button[aria-label*="feedback"],
-[role="dialog"][aria-label*="vercel"],
-div[class*="vcls-"] {
-  display: none !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  height: 0 !important;
-  width: 0 !important;
-}
-
-/* Bloqueo adicional para iframes */
-iframe {
-  opacity: 0 !important;
 }
