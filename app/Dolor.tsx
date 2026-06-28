@@ -139,20 +139,7 @@ export default function Dolor() {
               >
                 ❌ Sistema Lineal
               </div>
-              <div
-                className="mb-3 hidden md:block"
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: "0.75rem",
-                  color: "var(--text-muted)",
-                  lineHeight: 2,
-                }}
-              >
-                página 1 → página 2 → página 3 → ...{" "}
-                <span style={{ color: "var(--accent-orange)" }}>
-                  ERROR: stack overflow
-                </span>
-              </div>
+
               <p
                 className="text-sm"
                 style={{ color: "var(--text-secondary)" }}
@@ -194,22 +181,7 @@ export default function Dolor() {
               >
                 ✓ Pensamiento Irradiante
               </div>
-              <div
-                className="mb-3 hidden md:block"
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: "0.75rem",
-                  color: "var(--text-muted)",
-                  lineHeight: 2,
-                }}
-              >
-                NodoMaestro{" "}
-                <span style={{ color: "var(--accent-cyan)" }}>
-                  ⟶ nodo[1..N]
-                </span>{" "}
-                → retención:{" "}
-                <span style={{ color: "var(--accent-cta)" }}>OK</span>
-              </div>
+
               <p
                 className="text-sm"
                 style={{ color: "var(--text-secondary)" }}
